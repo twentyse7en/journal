@@ -6,4 +6,4 @@
 - *where else I take note?* ans: Obsidian, It's awsome. I primarily write on Obsidian, copy that content here. Here I can track what I did in which day. Track my evolution.
 
 # Content
-- [10 Aug, 2024: Exploring ios native development](/ios_native_development_10_08_2024.md)
+- [10 Aug, 2024: Exploring ios native development](/content/ios_native_development_10_08_2024.md)
