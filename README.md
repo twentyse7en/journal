@@ -10,4 +10,4 @@
 
 # Link Collection
 A collection of links I find useful
-- [System Design](/links/system-design.md)
+- [System Design](/links/system_design.md)
