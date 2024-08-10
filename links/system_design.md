@@ -8,3 +8,11 @@ create a unstyled generic `<Button/>`. There could be primary and secondary butt
 Every time we need a new button, we don't need to mess with `<Button />`.   
 
 This follow `O` of `S.O.L.I.D` priniciple
+
+## [Refactoring a messy react component](https://alexkondov.com/refactoring-a-messy-react-component/)
+Not advanced stuff, more like for beginners
+- move utils outside of component.
+- use `useQuery` package
+- use package for form validation
+- don't use `useEffect` unless very necessary
+- split into smaller components
