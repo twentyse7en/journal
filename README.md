@@ -7,6 +7,7 @@
 
 # Content
 - [10 Aug, 2024: Exploring ios native development](/content/ios_native_development_10_08_2024.md)
+- [18 Aug, 2024: Issue with floating point, be careful!](/content/floating_point_issue_18_08_2024.md)
 
 # Link Collection
 A collection of links I find useful
