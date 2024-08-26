@@ -5,7 +5,7 @@ most commont use of `key` is when React Component is used inside a map
 
 ```jsx
 {
-    list.maa((item) => <Card key={item.id}>)
+    list.map((item) => <Card key={item.id}>)
 }
 ```
 
