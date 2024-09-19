@@ -11,6 +11,7 @@
 - [18 Aug, 2024: Repeating a svg](/content/repeating_a_svg_18_08_2024.md)
 - [25 Aug, 2024: React keys alternative use](/content/react_keys_alternative_25_08_2024.md)
 - [31 Aug, 2024: React Native: Map vs Flatlist](/content/react_native_map_vs_flatlist_31_aug_2024.md)
+- [19 Sep, 2024](/content/frontend_url_structure.md)
 
 # Link Collection
 A collection of links I find useful
