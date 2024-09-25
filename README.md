@@ -12,6 +12,7 @@
 - [25 Aug, 2024: React keys alternative use](/content/react_keys_alternative_25_08_2024.md)
 - [31 Aug, 2024: React Native: Map vs Flatlist](/content/react_native_map_vs_flatlist_31_aug_2024.md)
 - [19 Sep, 2024: Frontend URL structure](/content/frontend_url_structure.md)
+- [25 Sep, 2024: Avoid conditional rendering for mutually exclusive states](/content/mutually_exclusive_state_25_09_2024.md) 
 
 # Link Collection
 A collection of links I find useful
