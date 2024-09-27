@@ -18,3 +18,4 @@
 A collection of links I find useful
 - [System Design](/links/system_design.md)
 - [Personal Websites](/links/personal_website.md)
+- [Landing Page](/links/landing_page.md)
