@@ -9,3 +9,4 @@ Personal websites I found interesting
 - [Kuldar](https://dau1oi2ms0imm.cloudfront.net/2023-09-06-kuldar.html)
 - [Akshay Tyagi](https://akashtyagi.com/)
 - [Jacob Leech](https://jacobleech.com/)
+- [Vikrant Bhat](https://vikrantbhat.com/hire-me)
