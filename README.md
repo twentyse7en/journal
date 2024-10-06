@@ -14,6 +14,7 @@
 - [19 Sep, 2024: Frontend URL structure](/content/frontend_url_structure.md)
 - [25 Sep, 2024: Avoid conditional rendering for mutually exclusive states](/content/mutually_exclusive_state_25_09_2024.md) 
 - [01 Oct, 2024: Hermes (JS engine)](/content/hermes_01_10_2024.md)
+- [06 Oct, 2024: What is gradle?](/content/gradle_06_10_24.md)
 
 # Link Collection
 A collection of links I find useful
