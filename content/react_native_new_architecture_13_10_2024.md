@@ -51,9 +51,27 @@ Another example is positioning tooltip based on some layout calculation. `useLay
 <img width="600" src="/content/images/new_architecture.png" />
 
 ### Javascript Interface
+> "JSI is an interface that allows JavaScript to hold a reference to a C++ object and vice-versa. With a memory reference, you can directly invoke methods without serialization costs." ~ React Docs
 
-### Turbogen
+so no more bridge, no more overhead. Javascript can directly call native part.
+- Java/Object-C methods/Object will be exposed to javascript via `HostObject`
+- Javscript will hold reference to HostObject and through this reference access the methods and props directly on Java/Object-C API
+- This can be done:
+	- synchronously on same thread
+	- asynchronously on different thread
+
+### Turbo Modules
+Turbo modules are native modules in new architecture. This can be loaded when required, thus reduce the startup time.
 
 ### Fabric
+This is renderer responsible for translating react components into host platform components. Now we can priorities render, if there is high prioirty render, it can run on main thread. The renderer is able to measure and render React surfaces synchronously (tooltip issue can be resolved). Easier to implement server side rendering for React Native.
 
 ### Codegen
+There will be boilerplate code required to bind native modules with javascript, with codegen this will can be automatically generated.
+
+<img width="600" src="/content/images/rn_codegen.png" />
+
+### History
+- This was announced in 2018
+- Meta already uses it
+- from v0.68, there is option to choose new architecture
