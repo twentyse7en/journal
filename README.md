@@ -17,6 +17,7 @@
 - [06 Oct, 2024: What is gradle?](/content/gradle_06_10_24.md)
 - [12 Oct, 2024: Wazzup kotlin](/content/kotlin_12_10_2024.md)
 - [13 Oct, 2024: React Native: new architecture](/content/react_native_new_architecture_13_10_2024.md)
+- [15 Oct, 2024: Context selectors)(/content/context_selectors_15_10_2024.md)
 
 # Link Collection
 A collection of links I find useful
