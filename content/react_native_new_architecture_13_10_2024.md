@@ -75,3 +75,7 @@ There will be boilerplate code required to bind native modules with javascript, 
 - This was announced in 2018
 - Meta already uses it
 - from v0.68, there is option to choose new architecture
+
+## Future exploration
+- We haven't explored issues with the new architecture, in this podcase Mark explains few issues and why he created NitroModules as a replacement of TurboModules
+- Will try to create a working example of old architecture and new architure showing tooltip or update issue mention earlier in blog 🤞
