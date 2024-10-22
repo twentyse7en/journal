@@ -18,6 +18,7 @@
 - [12 Oct, 2024: Wazzup kotlin](/content/kotlin_12_10_2024.md)
 - [13 Oct, 2024: React Native: new architecture](/content/react_native_new_architecture_13_10_2024.md)
 - [15 Oct, 2024: Context selectors](/content/context_selectors_15_10_2024.md)
+- [22 Oct, 2024: React compiler // TODO](/content/react_compiler_22_oct_2024.md)
 
 # Link Collection
 A collection of links I find useful
