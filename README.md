@@ -19,7 +19,7 @@
 - [13 Oct, 2024: React Native: new architecture](/content/react_native_new_architecture_13_10_2024.md)
 - [15 Oct, 2024: Context selectors](/content/context_selectors_15_10_2024.md)
 - [22 Oct, 2024: React compiler // TODO](/content/react_compiler_22_oct_2024.md)
-- [29 Oct, 2024: Customer Retention](/content/customer_retention_29_10_2024.md)
+- [29 Oct, 2024: Customer Retention for Saas startups](/content/customer_retention_29_10_2024.md)
 
 # Link Collection
 A collection of links I find useful
