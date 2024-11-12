@@ -10,3 +10,4 @@ Personal websites I found interesting
 - [Akshay Tyagi](https://akashtyagi.com/)
 - [Jacob Leech](https://jacobleech.com/)
 - [Vikrant Bhat](https://vikrantbhat.com/hire-me)
+- [Shuding](https://shud.in/)
