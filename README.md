@@ -21,6 +21,7 @@
 - [22 Oct, 2024: React compiler // TODO](/content/react_compiler_22_oct_2024.md)
 - [29 Oct, 2024: Customer Retention for Saas startups](/content/customer_retention_29_10_2024.md)
 - [10 Nov, 2024: Software Estimation Technique](https://gist.github.com/twentyse7en/eca6c73226f1db7f46463cef2bec3efb)
+- [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
 
 # Link Collection
 A collection of links I find useful
