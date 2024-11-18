@@ -11,3 +11,4 @@ Personal websites I found interesting
 - [Jacob Leech](https://jacobleech.com/)
 - [Vikrant Bhat](https://vikrantbhat.com/hire-me)
 - [Shuding](https://shud.in/)
+- [Florian](https://flo-bit.dev/)
