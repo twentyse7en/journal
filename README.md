@@ -24,7 +24,7 @@
 - [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
 
 # Reading Bucketlist
-Some blogs or articles I discovered, which I haven't got to read completely
+Some blogs or articles I discovered, which I haven't got time to read completely
 - [Sam Who](https://samwho.dev/)
   
 # Link Collection
