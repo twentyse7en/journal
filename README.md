@@ -23,6 +23,10 @@
 - [10 Nov, 2024: Software Estimation Technique](https://gist.github.com/twentyse7en/eca6c73226f1db7f46463cef2bec3efb)
 - [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
 
+# Reading Bucketlist
+Some blogs or articles I discovered, which I haven't got to read completely
+- [Sam Who](https://samwho.dev/)
+  
 # Link Collection
 A collection of links I find useful
 - [System Design](/links/system_design.md)
