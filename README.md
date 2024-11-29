@@ -22,6 +22,7 @@
 - [29 Oct, 2024: Customer Retention for Saas startups](/content/customer_retention_29_10_2024.md)
 - [10 Nov, 2024: Software Estimation Technique](https://gist.github.com/twentyse7en/eca6c73226f1db7f46463cef2bec3efb)
 - [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
+- [29 Nov, 2024: UI feedbacks](https://gist.github.com/twentyse7en/7b98f1fc31ee17452ac9fce8d8118e40) // Growing
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
