@@ -12,3 +12,4 @@ Personal websites I found interesting
 - [Vikrant Bhat](https://vikrantbhat.com/hire-me)
 - [Shuding](https://shud.in/)
 - [Florian](https://flo-bit.dev/)
+- [Jannis Mattheis](https://jmattheis.de/)
