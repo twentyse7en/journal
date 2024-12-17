@@ -23,6 +23,7 @@
 - [10 Nov, 2024: Software Estimation Technique](https://gist.github.com/twentyse7en/eca6c73226f1db7f46463cef2bec3efb)
 - [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
 - [29 Nov, 2024: UI feedbacks](https://gist.github.com/twentyse7en/7b98f1fc31ee17452ac9fce8d8118e40) // Growing
+- [17 Dec, 2024: What is Product engineering](https://gist.github.com/twentyse7en/e749485d5eff96532c1daacbd69d8fbd) // WIP
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
