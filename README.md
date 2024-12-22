@@ -24,6 +24,7 @@
 - [16 Nov, 2024: Swift UI 101](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c) 
 - [29 Nov, 2024: UI feedbacks](https://gist.github.com/twentyse7en/7b98f1fc31ee17452ac9fce8d8118e40) // Growing
 - [17 Dec, 2024: What is Product engineering](https://gist.github.com/twentyse7en/e749485d5eff96532c1daacbd69d8fbd) // WIP
+- [22 Dec, 2024: Design system tooling at RazorPay](https://gist.github.com/twentyse7en/15bbd99c17255044b0a66a6213743c63)
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
