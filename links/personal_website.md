@@ -13,4 +13,4 @@ Personal websites I found interesting
 - [Shuding](https://shud.in/)
 - [Florian](https://flo-bit.dev/)
 - [Jannis Mattheis](https://jmattheis.de/)
-- [Avinash Sajjanshetty](https://avi.im/) - I like his minimal blogs
+- [Avinash Sajjanshetty](https://avi.im/) - I like his minimal blog theme
