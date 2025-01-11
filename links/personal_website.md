@@ -14,3 +14,6 @@ Personal websites I found interesting
 - [Florian](https://flo-bit.dev/)
 - [Jannis Mattheis](https://jmattheis.de/)
 - [Avinash Sajjanshetty](https://avi.im/) - I like his minimal blog theme
+- [Adarsh D K](https://www.adarshdk.com/) - Cool
+
+- [Blogscroll](https://blogscroll.com/) - contain a lot of personal websites
