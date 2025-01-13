@@ -1,0 +1,4 @@
+# Installing Packages
+
+## My experience
+I was trying to install `lottie-ios`, whole process was very easy. I followed [this](https://www.youtube.com/watch?v=u9xo-XdcRV8) video. But I had to spend 2 hours trying to fix the issue. May be specific to [lottie-ios](https://github.com/airbnb/lottie-ios). In the github Readme, they do have instructions to add this repo `https://github.com/airbnb/lottie-spm.git`, which was added succesfully. But I'm using `Lottie`, xcode is crashing. When adding `https://github.com/airbnb/lottie-ios`, It had 2 package - Lottie and Lottie dynamic. Don't add Lottie dynamic, then it start working.
