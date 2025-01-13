@@ -2,4 +2,8 @@
 All about ios developement
 
 ## Content
-- [Installing Packages](/swift/)
+- [Layout]()
+- [Adding SVG]()
+- [Installing Packages](/swift/installing_packages.md)
+- [Adding Fonts]()
+- [Adding Lottie]()
