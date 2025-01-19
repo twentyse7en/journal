@@ -54,3 +54,5 @@ struct CardSwipeNew: View {
     }
 }
 ```
+<video src="https://gist.github.com/user-attachments/assets/f57eb903-172f-4388-af59-83f4a60a2d8c"></video>
+
