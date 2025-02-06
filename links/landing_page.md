@@ -8,3 +8,6 @@ It's a simple problem, but handled professionally with more opportunities. But a
 
 # Transit
 travel booking app, tracking etc: https://transitapp.com/
+
+# Zen Browser
+- Nice color scheme and fonts https://zen-browser.app/
