@@ -17,3 +17,4 @@ Personal websites I found interesting
 - [Adarsh D K](https://www.adarshdk.com/) - Cool
 
 - [Blogscroll](https://blogscroll.com/) - contain a lot of personal websites
+- [Oktawian Chojnacki](https://oktawian.chojnacki.me/)
