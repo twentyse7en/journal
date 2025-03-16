@@ -67,7 +67,7 @@ class DataManager: ObservableObject {
 This class is designed to encapsulate all SwiftData operations, following a good separation of concerns pattern.
 
 @ObservableObject: This protocol allows SwiftUI views to observe the class instance and react to any changes in its published properties.
-### Key SwiftData Components in the Code
+#### Key SwiftData Components in the Code
 1. Schema
     - Defines the data model structure
     - In this code, it includes two model classes: Category and Affirmation
@@ -87,3 +87,198 @@ This class is designed to encapsulate all SwiftData operations, following a good
     - Used for interacting with the data
     - Handles operations like fetching, inserting, updating, and deleting objects
     - Similar to a session or transaction in database terms
+
+## What is a FetchDescriptor?
+
+A `FetchDescriptor` is a structure in Swift Data that describes how to retrieve model objects from your `ModelContainer`. It allows you to:
+
+- Filter results using predicates
+- Sort results in a specific order
+- Limit the number of results returned
+- Include or exclude specific properties in the results
+
+## Basic Usage
+
+### Creating a Simple FetchDescriptor
+
+```swift
+// Define a basic fetch descriptor for all items
+let allItemsFetchDescriptor = FetchDescriptor<Item>()
+
+// Fetch all items from the model container
+do {
+    let items = try modelContext.fetch(allItemsFetchDescriptor)
+    // Use the fetched items
+} catch {
+    print("Failed to fetch items: \(error)")
+}
+```
+
+### Filtering with Predicates
+
+```swift
+// Fetch only completed items
+var completedItemsFetchDescriptor = FetchDescriptor<Item>()
+completedItemsFetchDescriptor.predicate = #Predicate<Item> { item in
+    item.isCompleted == true
+}
+
+// Fetch items with a specific tag
+var taggedItemsFetchDescriptor = FetchDescriptor<Item>()
+taggedItemsFetchDescriptor.predicate = #Predicate<Item> { item in
+    item.tags.contains("important")
+}
+```
+
+### Sorting Results
+
+```swift
+// Sort by creation date (newest first)
+var recentItemsFetchDescriptor = FetchDescriptor<Item>()
+recentItemsFetchDescriptor.sortBy = [SortDescriptor(\Item.createdAt, order: .reverse)]
+
+// Sort by priority then by name
+var prioritizedItemsFetchDescriptor = FetchDescriptor<Item>()
+prioritizedItemsFetchDescriptor.sortBy = [
+    SortDescriptor(\Item.priority, order: .reverse),
+    SortDescriptor(\Item.name)
+]
+```
+
+### Limiting Results
+
+```swift
+// Fetch only the first 10 items
+var limitedFetchDescriptor = FetchDescriptor<Item>()
+limitedFetchDescriptor.fetchLimit = 10
+```
+
+## Advanced Features
+
+### Property Selection
+
+```swift
+// Only fetch specific properties to improve performance
+var efficientFetchDescriptor = FetchDescriptor<Item>()
+efficientFetchDescriptor.propertiesToFetch = [\Item.id, \Item.name]
+```
+
+### Relationship Depth
+
+```swift
+// Control how many levels of relationships to include
+var relationalFetchDescriptor = FetchDescriptor<Item>()
+relationalFetchDescriptor.relationshipKeyPathsForPrefetching = [\Item.category, \Item.tags]
+```
+
+### Combined Example
+
+```swift
+// A comprehensive fetch descriptor
+var comprehensiveFetchDescriptor = FetchDescriptor<Item>()
+comprehensiveFetchDescriptor.predicate = #Predicate<Item> { item in
+    item.isCompleted == false && item.priority > 3
+}
+comprehensiveFetchDescriptor.sortBy = [SortDescriptor(\Item.dueDate)]
+comprehensiveFetchDescriptor.fetchLimit = 50
+comprehensiveFetchDescriptor.includesSubentities = true
+```
+
+## Working with SwiftUI
+
+```swift
+struct ContentView: View {
+    @Query(sort: \Item.createdAt, order: .reverse) var items: [Item]
+    
+    // @Query is a property wrapper that internally uses FetchDescriptor
+    // It automatically updates when the data changes
+    
+    var body: some View {
+        List(items) { item in
+            Text(item.name)
+        }
+    }
+}
+```
+
+## Custom Query Functions
+
+```swift
+extension ModelContext {
+    func fetchRecentItems(limit: Int = 20) throws -> [Item] {
+        var descriptor = FetchDescriptor<Item>()
+        descriptor.predicate = #Predicate<Item> { item in
+            item.createdAt > Date().addingTimeInterval(-7*24*60*60)
+        }
+        descriptor.sortBy = [SortDescriptor(\Item.createdAt, order: .reverse)]
+        descriptor.fetchLimit = limit
+        
+        return try fetch(descriptor)
+    }
+}
+```
+
+## Error Handling
+
+```swift
+do {
+    let items = try modelContext.fetch(fetchDescriptor)
+    // Process items
+} catch {
+    if let swiftDataError = error as? SwiftDataError {
+        // Handle specific Swift Data errors
+        switch swiftDataError {
+        case .modelReadOnly:
+            print("The model is read-only")
+        case .validationFailed:
+            print("Validation failed")
+        default:
+            print("Other Swift Data error: \(swiftDataError)")
+        }
+    } else {
+        print("Unexpected error: \(error)")
+    }
+}
+```
+
+## Performance Tips
+
+- Use `fetchLimit` to avoid loading too many objects into memory
+- Use `propertiesToFetch` to only load the properties you need
+- Consider batching large fetches using multiple fetch operations with different predicates
+- Use `@Query` in SwiftUI for automatic updates rather than manually fetching when possible
+```
+
+## Common Issues and Solutions
+
+### Invalid Predicate Format
+If you're getting errors with predicates, make sure you're using the correct format:
+
+```swift
+// Swift Data uses the new macro-based predicates
+// Correct:
+fetchDescriptor.predicate = #Predicate<Item> { item in
+    item.name.contains("Swift")
+}
+
+// Incorrect (old NSPredicate style):
+// fetchDescriptor.predicate = NSPredicate(format: "name CONTAINS %@", "Swift")
+```
+
+### Relationship Traversal
+To filter based on relationships:
+
+```swift
+fetchDescriptor.predicate = #Predicate<Project> { project in
+    project.tasks.contains(where: { $0.isCompleted == false })
+}
+```
+
+### Case-Insensitive Searches
+For case-insensitive text searches:
+
+```swift
+fetchDescriptor.predicate = #Predicate<Item> { item in
+    item.name.localizedStandardContains("search term")
+}
+```
