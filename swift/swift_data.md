@@ -301,6 +301,20 @@ struct AffirmationsApp: App {
     }
 }
 ```
+// usage
+```swift
+struct ContentView: View {
+    @EnvironmentObject private var dataManager: DataManager
+
+    
+    var body: some View {}
+
+    private func loadData() {
+        categories = dataManager.fetchCategories()
+        loadAffirmations()
+    }
+    
+```
 
 ## Detailed Explanation
 
