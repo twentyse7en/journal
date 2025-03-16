@@ -13,5 +13,8 @@ All about ios developement
 ## IOS
 - [AppDelegate](/swift/app_delegate.md)
 
+## Storage
+- [Swift Data](/swift/swift_data.md)
+
 # Other Resource
 - [Swiftui components](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c)
