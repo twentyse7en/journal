@@ -333,3 +333,31 @@ By using `@StateObject` and `.environmentObject()`, the app ensures that:
 - Changes to the data will automatically trigger UI updates in views that observe this data.
 
 This architecture follows SwiftUI's data flow patterns, where data is passed down through the view hierarchy and changes propagate back up through bindings or observed objects.
+
+# Common Issue
+underlying database is sqlite, I think we can't think swift inside `#predicate` we need to think like db
+
+- https://www.hackingwithswift.com/quick-start/swiftdata/common-swiftdata-errors-and-their-solutions
+## EXC_BAD_ACCESS (code=1, address=0x0) / Crashing
+
+```swift
+@Model
+class Author {
+    var name: String
+    var books: [String] // <------------------------------------------------------
+
+    init(name: String, books: [String]) {
+        self.name = name
+        self.books = books
+    }
+}
+
+@Query(filter: #Predicate<Author> {
+    $0.books.contains("The Hobbit")
+}) var authors: [Author]
+```
+Certainly it compiles cleanly. However, it also triggers the dreaded EXC_BAD_ACCESS, because we're trying to search a string array in a predicate – something that isn't allowed in SwiftData.
+
+To fix this you need to create a relationship rather than a simple array. Internally SwiftData sees something like [String] and uses Codable to convert it to a data blob that can be saved alongside its parent model. This makes it impossible to search by SQLite, the underlying data store.
+
+So, you should create a second model and make a relationship with it, even if that model only has a single string property.
