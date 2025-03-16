@@ -38,3 +38,52 @@ struct MyApp: App {
     }
 }
 ```
+
+## DataManager
+
+```swift
+class DataManager: ObservableObject {
+    let modelContainer: ModelContainer
+    let modelContext: ModelContext
+    
+    private let initialSetupKey = "initialDataSetupCompleted"
+    
+    init() {
+        do {
+            let schema = Schema([Category.self, Affirmation.self])
+            let modelConfiguration = ModelConfiguration(schema: schema)
+            modelContainer = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            modelContext = ModelContext(modelContainer)
+            
+            // Check if we need to populate initial data
+            // checkAndPopulateInitialData()
+        } catch {
+            fatalError("Failed to create ModelContainer: \(error.localizedDescription)")
+        }
+    }
+}
+```
+### The DataManager Class
+This class is designed to encapsulate all SwiftData operations, following a good separation of concerns pattern.
+
+@ObservableObject: This protocol allows SwiftUI views to observe the class instance and react to any changes in its published properties.
+### Key SwiftData Components in the Code
+1. Schema
+    - Defines the data model structure
+    - In this code, it includes two model classes: Category and Affirmation
+    - The schema essentially maps your Swift objects to database tables
+
+2. ModelConfiguration
+    - Configures how the data models behave
+    - Can specify options like storage location, migration policies, etc.
+
+3. ModelContainer
+    - The actual container that holds your data
+    - Responsible for storage, retrieval, and persistence
+    - Initialized with a schema and configurations
+    - Comparable to a database instance
+
+4. ModelContext
+    - Used for interacting with the data
+    - Handles operations like fetching, inserting, updating, and deleting objects
+    - Similar to a session or transaction in database terms
