@@ -282,3 +282,40 @@ fetchDescriptor.predicate = #Predicate<Item> { item in
     item.name.localizedStandardContains("search term")
 }
 ```
+-----------------------------------------------------------------
+##  SwiftUI App with DataManager Explanation
+
+```swift
+import SwiftUI
+import SwiftData
+
+@main
+struct AffirmationsApp: App {
+    @StateObject private var dataManager = DataManager()
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(dataManager)
+        }
+    }
+}
+```
+
+## Detailed Explanation
+
+### DataManager Integration
+- `@StateObject private var dataManager = DataManager()`: This line creates an instance of a custom `DataManager` class as a state object.
+  - `@StateObject`: This property wrapper creates an observable object that persists for the lifetime of the app. It ensures the `DataManager` is initialized only once when the app starts up.
+  - The `DataManager` is likely handling all the data persistence operations using SwiftData.
+
+### Scene Configuration
+- `.environmentObject(dataManager)`: This injects the `dataManager` into the SwiftUI environment, making it available to `ContentView` and all of its child views using the `@EnvironmentObject` property wrapper.
+
+
+By using `@StateObject` and `.environmentObject()`, the app ensures that:
+- The `DataManager` is created only once when the app launches.
+- All views that need access to the data can easily obtain it through the environment.
+- Changes to the data will automatically trigger UI updates in views that observe this data.
+
+This architecture follows SwiftUI's data flow patterns, where data is passed down through the view hierarchy and changes propagate back up through bindings or observed objects.
