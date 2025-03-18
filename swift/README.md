@@ -15,6 +15,7 @@ All about ios developement
 
 ## Storage
 - [Swift Data](/swift/swift_data.md)
+- [Swift Data V2](/swift/swift_data_v2.md)
 
 # Other Resource
 - [Swiftui components](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c)
