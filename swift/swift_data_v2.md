@@ -139,6 +139,8 @@ class Friend {
     }
 ```
 
+-- continue: https://developer.apple.com/tutorials/develop-in-swift/create-update-and-delete-data
+
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
 - Using `Date`, `DatePicker`, and `Calendar` to work with dates
