@@ -106,5 +106,37 @@ If you have `@Query` it will automatically refresh after save is complete
 #### `.onAppear`
 - A SwiftUI modifier for running synchronous code when a view appears on the screen.
 - Use for synchronous tasks like updating state, starting animations, or logging when a view appears.
+
+### Computeted Property in Model
+```swift
+import Foundation
+import SwiftData
+
+
+@Model
+class Friend {
+    var name: String
+    var birthday: Date
+
+
+    init(name: String, birthday: Date) {
+        self.name = name
+        self.birthday = birthday
+    }
+
+
+    var isBirthdayToday: Bool {
+        Calendar.current.isDateInToday(birthday) // <-------------- comptuted when needed
+    }
+}
+```
+
+## Yet to Explore
+- `NavigationStack` and `NavigationLink` which I ignored.
+- Using `Date`, `DatePicker`, and `Calendar` to work with dates
+- Positioning content on the screen using `.safeAreaInset`
+- Formatting dates in `Text` views
+
+
 ## Reference
 - https://developer.apple.com/tutorials/develop-in-swift/navigate-sample-data
