@@ -130,6 +130,14 @@ class Friend {
     }
 }
 ```
+### Delete Content
+```swift
+    private func deleteMovies(indexes: IndexSet) {
+        for index in indexes {
+            context.delete(movies[index]) // <-----------------------
+        }
+    }
+```
 
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
