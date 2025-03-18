@@ -97,5 +97,14 @@ class SampleData {
             }.padding(40)
 ```
 If you have `@Query` it will automatically refresh after save is complete
+
+### ☕ Break - Sidequest
+#### `.task`
+- A SwiftUI modifier for performing asynchronous work when a view appears. It automatically cancels the task if the view disappears.
+- Use for asynchronous tasks like fetching data, network requests, or any async/await operations tied to the view's lifecycle.
+
+#### `.onAppear`
+- A SwiftUI modifier for running synchronous code when a view appears on the screen.
+- Use for synchronous tasks like updating state, starting animations, or logging when a view appears.
 ## Reference
 - https://developer.apple.com/tutorials/develop-in-swift/navigate-sample-data
