@@ -138,6 +138,21 @@ class Friend {
         }
     }
 ```
+### Update content
+You can consider this as normal `@State` data, just mutate that's it.
+
+```swift
+struct FriendDetails: View {
+    @Bindable var friend: Friend // <--------------------------- Add binding as usual
+    
+    var body: some View {
+        TextField("Name", text: $friend.name)
+            .autocorrectionDisabled()
+            .navigationTitle("Friend")
+            .navigationBarTitleDisplayMode(.inline)
+    }
+}
+```
 
 -- continue: https://developer.apple.com/tutorials/develop-in-swift/create-update-and-delete-data
 
