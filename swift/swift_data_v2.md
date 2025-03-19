@@ -206,6 +206,29 @@ The Friend.favoriteMovie and Movie.favoritedBy properties form a two-way relatio
         }
 ```
 
+## Condition - Predicate
+- You use [predicates](https://developer.apple.com/documentation/foundation/predicate) to describe conditions for SwiftData to filter data.
+
+### Search Movies
+```swift
+struct MovieList: View {
+    @Query private var movies: [Movie]
+    @Environment(\.modelContext) private var context
+    @State private var newMovie: Movie?
+
+
+    init(titleFilter: String = "") { // <----------------------------------------------------------| Props titleFilter is passed
+        let predicate = #Predicate<Movie> { movie in
+            titleFilter.isEmpty || movie.title.localizedStandardContains(titleFilter) // <---------| logic for filtering
+        }
+
+
+        _movies = Query(filter: predicate, sort: \Movie.title) // <--------------------------------| _movie (special variable)
+    }
+```
+- here we are passing `titleFiler` as a string to for filtering movies
+- we need to be careful about predicate, we can add any code here, this need to be as per [predicate](https://developer.apple.com/documentation/foundation/predicate) rules. I wasted too much time not understand this 😓
+- `_movies`: this one tricky, The underscore property (_movies) is the actual storage that SwiftData uses behind the scenes. So even though we haven't declared this when `moives` was created this one is also created.
 
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
