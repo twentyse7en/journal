@@ -5,7 +5,7 @@
 ### Usage in component
 ```swift
 import SwiftUI
-import SwiftData
+import SwiftData // <--------------------------------------------------------------- Import SwiftData
 
 
 struct FriendList: View {
@@ -168,6 +168,44 @@ struct FriendDetails: View {
 ```
 
 -- continue: https://developer.apple.com/tutorials/develop-in-swift/create-update-and-delete-data
+
+## Relationship
+In tutorial which we are creating so far, there is Friend and Movies. A user can have fav movie, a movie can be favourited by multiple
+people. One to Many Relationship.
+
+```swift
+@Model
+class Friend {
+    var name: String
+    var favoriteMovie: Movie?  // <-------------------- One and it's optional
+
+
+    init(name: String) {
+        self.name = name
+    }
+}
+```
+**⚠️ Note**: If it's was a db, we might have stored id of movie, but we need to reference entire Movie, **Important!**
+
+```swift
+@Model
+class Movie {
+    var title: String
+    var releaseDate: Date
+    var favoritedBy = [Friend]() // <----------------------- allows array of Friends
+```
+The Friend.favoriteMovie and Movie.favoritedBy properties form a two-way relationship. In the direction from Movie to Friend, it’s a one-to-many relationship: One movie can be favorited by multiple friends. You can create the appropriate type of relationship by choosing between an array or a single value for each property, enabling you to create one-to-one, one-to-many, and many-to-many relationships.
+
+```swift
+        Section ("Favorited By"){
+            List {
+                ForEach(movie.favoritedBy) { friend in // <----------------- We can directly access values
+                    Text(friend.name)
+                }
+            }
+        }
+```
+
 
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
