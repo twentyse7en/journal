@@ -84,6 +84,19 @@ class SampleData {
 ````
 - This tutorial introduced `NavigationStack` and `NavigationLink` which I ignored.
 
+**NOTE**: At the end of tutorial, `SampleData` was used for preview only, instead below code is used
+```swift
+@main
+struct NavigationSwiftDataApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .modelContainer(for: [Movie.self, Friend.self])
+    }
+}
+```
+
 ### Saving Data
 ```swift
             HStack{
