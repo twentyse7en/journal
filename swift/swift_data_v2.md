@@ -217,13 +217,14 @@ struct MovieList: View {
     @State private var newMovie: Movie?
 
 
-    init(titleFilter: String = "") { // <----------------------------------------------------------| Props titleFilter is passed
+    init(titleFilter: String = "") { // <-----------------------------------| Props titleFilter
         let predicate = #Predicate<Movie> { movie in
-            titleFilter.isEmpty || movie.title.localizedStandardContains(titleFilter) // <---------| logic for filtering
+            titleFilter.isEmpty ||
+            movie.title.localizedStandardContains(titleFilter) // <---------| logic for filtering
         }
 
 
-        _movies = Query(filter: predicate, sort: \Movie.title) // <--------------------------------| _movie (special variable)
+        _movies = Query(filter: predicate, sort: \Movie.title) // <----------| _movie (special)
     }
 ```
 - here we are passing `titleFiler` as a string to for filtering movies
