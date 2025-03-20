@@ -240,3 +240,6 @@ struct MovieList: View {
 
 ## Reference
 - https://developer.apple.com/tutorials/develop-in-swift/navigate-sample-data
+- (Good intro) https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches 
+- (Another tuto) https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app
+- (Populating data) https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data
