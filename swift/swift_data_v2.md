@@ -235,7 +235,7 @@ struct MovieList: View {
 After compeleting One-to-Many relationship, I thought I could naturally pick up Many-to-Many Relationship. But I that was noobie mistake.
 There is more to learn about swiftdata, we try to learn about Many to many first. 
 - [Resource 1](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-create-many-to-many-relationships)
-- [Resource 2](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX&index=1)
+- [Resource 2](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX&index=1)     
 If you do something, swift data will crash without giving clue about the error, Manh!
 
 ## Yet to Explore
