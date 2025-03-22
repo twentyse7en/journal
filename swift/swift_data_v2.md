@@ -231,6 +231,13 @@ struct MovieList: View {
 - we need to be careful about predicate, we can add any code here, this need to be as per [predicate](https://developer.apple.com/documentation/foundation/predicate) rules. I wasted too much time not understand this 😓
 - `_movies`: this one tricky, The underscore property (_movies) is the actual storage that SwiftData uses behind the scenes. So even though we haven't declared this when `moives` was created this one is also created.
 
+## Many to Many Relationship
+After compeleting One-to-Many relationship, I thought I could naturally pick up Many-to-Many Relationship. But I that was noobie mistake.
+There is more to learn about swiftdata, we try to learn about Many to many first. 
+- [Resource 1](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-create-many-to-many-relationships)
+- [Resource 2](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX&index=1)
+If you do something, swift data will crash without giving clue about the error, Manh!
+
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
 - Using `Date`, `DatePicker`, and `Calendar` to work with dates
