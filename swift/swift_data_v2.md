@@ -236,7 +236,77 @@ After compeleting One-to-Many relationship, I thought I could naturally pick up 
 There is more to learn about swiftdata, we try to learn about Many to many first. 
 - [Resource 1](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-create-many-to-many-relationships)
 - [Resource 2](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX&index=1)     
-If you do something, swift data will crash without giving clue about the error, Manh!
+If you do something, swift data will crash without giving clue about the error, Manh! (It's like you girlfriend, will go upset without telling reason)
+
+1. Step 1: Mark the relationship properly
+```swift
+@Model
+class Actor {
+    var name: String
+    var movies: [Movie]
+
+    init(name: String, movies: [Movie]) {
+        self.name = name
+        self.movies = movies
+    }
+}
+
+@Model
+class Movie {
+    var name: String
+    var releaseYear: Int
+    @Relationship(inverse: \Actor.movies) var cast: [Actor] // <--------------------------------- (mandatory)
+
+    init(name: String, releaseYear: Int, cast: [Actor]) {
+        self.name = name
+        self.releaseYear = releaseYear
+        self.cast = cast
+    }
+}
+```
+
+2. Inset to context
+No need to explicitly insert mi2
+```swift
+let mi2 = Movie(name: "Mission: Impossible 2", releaseYear: 2000, cast: [])
+let cruise = Actor(name: "Tom Cruise", movies: [mi2])
+let newton = Actor(name: "Thandiwe Newton", movies: [mi2])
+
+modelContext.insert(cruise)
+modelContext.insert(newton)
+```
+3. List of don'ts
+
+```swift
+let mi2 = Movie(name: "Mission: Impossible 2", releaseYear: 2000, cast: [])
+
+let cruise = Actor(name: "Tom Cruise", movies: [])
+let newton = Actor(name: "Thandiwe Newton", movies: [])
+
+// DONT MANIPULATE BEFORE INSERT
+mi2.cast.append(cruise)
+mi2.cast.append(newton)
+
+modelContext.insert(mi2)
+modelContext.insert(cruise)
+modelContext.insert(newton)
+
+
+//------ Do after insertion
+// mi2.cast.append(cruise)
+// mi2.cast.append(newton)
+```
+> You’ll also get a crash with the message “illegal attempt to establish a relationship” if you attempt to insert things out of sequence, like this:
+```swift
+let mi2 = Movie(name: "Mission: Impossible 2", releaseYear: 2000, cast: [])
+modelContext.insert(mi2)
+
+let cruise = Actor(name: "Tom Cruise", movies: [mi2])
+let newton = Actor(name: "Thandiwe Newton", movies: [mi2])
+
+modelContext.insert(cruise)
+modelContext.insert(newton)
+```
 
 ## Yet to Explore
 - `NavigationStack` and `NavigationLink` which I ignored.
