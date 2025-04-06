@@ -29,6 +29,7 @@
 - [11 Jan, 2025: Weekend Experiment Logs - 1](/content/weekend_experiment_11_01_2024.md)
 - [11 Feb, 2025: Duolingo handbook notes](/content/duolingo_handbook_notes_13_02_2025.md)
 - [6 Apr, 2025: iOS offiline Data](/content/offline_data_ios_06_04_2025.md)
+- [6 Apr, 2025: iOS Widget with DB interaction](/content/ios_widget_06_04_2025.md)
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
