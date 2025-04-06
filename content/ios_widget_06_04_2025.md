@@ -8,3 +8,6 @@
 
 # Basic
 - If app and widget need to share db or other file, we need to create a `AppGroup` and files also need to be in both.
+
+# Resources
+- [AppGroup Creation](https://www.youtube.com/watch?v=FV_3kiRF90g)
