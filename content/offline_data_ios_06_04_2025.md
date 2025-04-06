@@ -1,19 +1,26 @@
 # Managing offline data in IOS
 
+# TL;DR
+Building an iOS affirmation app with mostly static content—no server needed. Initially thought of using JSON, but it didn’t scale well. Explored SwiftData, which is nice but has limitations with prefilling and migrations. Considered splitting static and user data, but still hit roadblocks. Now looking into GRDB to manage a read-only SQLite DB for static content, and keeping user-generated data separate. Still learning, figuring things out as I go. Native iOS dev feels a bit lonely, but making progress.
+
 # Intro
-I'm trying to make an App for iOS. Affirmation App precisely. Most of my data is static, I don't need a server, data can reside on users phone and If I need a change I will update the App. I first thought to use a simple JSON, but that might be too simple, we have a lot of data, we don't need open everything to memory at once. Then I found about `SwiftData` and other sqlite wrapper.
+I'm building an iOS app—an Affirmation App, to be precise. Most of the data is static, so I don't need a server. The data can live on the user's phone, and if I ever need to make changes, I'll just push an app update. At first, I thought of using a simple JSON file, but that felt too basic. We have a lot of data, and I don't want to load everything into memory at once. Then I discovered SwiftData and other SQLite wrappers.
 
 # SwiftData
-For last 2-3 weeks I was figuring out how to manage offline data in ios app. iOS have introduces `SwiftData` which is wrapper over `sqlite`. It had a learning curve, most of the time you are alone, feels like not much people interested in ios development. StackOverflows and reddit questions with no answers, feel like abondoned place. That questions my choice of choosing framework, was react native a better choice? Whole point of the project was to compelte a project and understand the native development part. If we consider from community support, Youtube tutorial it's quite lot less popular than React Native. But at the end of the tunnel there was light, I was able figure out stuffs. 
+For the last 2–3 weeks (on weekends), I’ve been figuring out how to manage offline data in an iOS app. iOS has introduced SwiftData, which is a wrapper over SQLite. It had a learning curve, most of the time you are alone, feels like not much people interested in ios development. StackOverflow and Reddit questions often have no answers—feels like a ghost town.It made me question my choice of framework—was React Native a better option? But the whole point of this project was to actually finish something and learn native development. If we consider from community support, Youtube tutorial it's quite lot less popular than React Native. But at the end of the tunnel there was light, I was able figure out stuffs. 
 
-With `SwfitData` you can't run the query directly, you have to go through their abstraction layer. What do you miss out, I have to prefill the db, also on update I have to migrate the changes. Decision should be based on the volume of data, If you have to prefill the 1000 rows It will take around 1 second, my idea was to delete the db every time when app update and fill the database again. But my app the contents will grow, this method doesn't make sense for me.
+With SwiftData, you can’t run raw queries directly—you have to go through their abstraction layer. What you miss out on: I have to prefill the DB manually, and I also need to handle migrations on updates. Decision should be based on the volume of data, If you have to prefill the 1000 rows It will take around 1 second. My idea was to delete the rows every time app update and fill the new rows again. But when my app grows, this method doesn't make sense for me.
 
-**User Created Content**: user can create their own affirmation and categories, which is independent of the static content, and mark affirmation as favouite, so my plan is to make this data independent from the static content. Swift data is great, but I couldn't find a way to solve the problem with prefilling, I don't need delete and populate my database on every update.
+User-Created Content: users can create their own affirmations and categories, which should stay separate from the static content. They can also mark affirmations as favorites, so my plan is to make this data independent from the static content. SwiftData is great, but I couldn’t find a clean solution for prefilling. I don’t want to delete and repopulate the entire DB on every update.
 
 # Raw Database
-I can create a read only sqlite database system, so I can replace that on every update. [GRDB](https://github.com/groue/GRDB.swift) is one of the sqlite wrapper for this. With *GRDB* setup, I can replace the sqlite itself and user generate content can stay in a different db either with *GRDB* or *SwiftData*.
+I can create a read-only SQLite database so I can just replace it with every update. [GRDB](https://github.com/groue/GRDB.swift) is one of the SQLite wrappers that supports this. With a GRDB setup, I can replace the SQLite file itself, while user-generated content can live in a separate DB—either using GRDB or SwiftData.
 
-# GRDB Setup
+# Useful Resources
+- SwiftData Tutorials: [
+Stewart Lynch](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX) | [tundsdev](https://www.youtube.com/watch?v=kLNNNXD8X2U&list=PLvUWi5tdh92wZ5_iDMcBpenwTgFNan9T7&index=1)
+
+# GRDB Sample Code
 It's easy to understand.
 
 ```swift
