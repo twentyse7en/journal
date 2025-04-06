@@ -20,6 +20,10 @@ I can create a read-only SQLite database so I can just replace it with every upd
 - SwiftData Tutorials: [
 Stewart Lynch](https://www.youtube.com/watch?v=CAr_1kcf2_c&list=PLBn01m5Vbs4Ck-JEF2nkcFTF_2rhGBMKX) | [tundsdev](https://www.youtube.com/watch?v=kLNNNXD8X2U&list=PLvUWi5tdh92wZ5_iDMcBpenwTgFNan9T7&index=1)
 
+# What's Next
+- Affirmation Widget
+- Local Notification System
+
 # GRDB Sample Code
 It's easy to understand.
 
