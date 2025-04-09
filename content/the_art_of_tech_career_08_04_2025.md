@@ -48,9 +48,75 @@ While total value is more straightforward, value over replacement is subjective 
 - **Treat side projects like experiments**
 > If you spend an afternoon on one of your own goals, and it doesn’t provide value, that wasted time is on you. It’s as if you spent the afternoon playing video games. Once you realize that, it forces you to become more agentic, which has all kinds of benefits for your career.
 
+# Playing politics is how senior engineers protect their team
+The article argues that senior engineers in large tech companies have a responsibility to engage in organizational politics to protect and advance their teams, particularly junior members. Key points include:
 
+1. **Team Success & Reputation**: A team’s failure jeopardizes all members’ reputations. Senior engineers must prioritize high-impact projects aligned with company goals to ensure their team remains visible and valued, avoiding layoffs or marginalization.
+
+2. **Impact on Juniors**:
+    - Visibility & Promotions: Juniors depend on high-profile work for career advancement, as they’re often in “up-or-out” roles. Seniors must secure impactful projects and advocate for their team’s contributions.
+
+    - Job Security: If a team fails, juniors face greater career risks (e.g., layoffs, difficulty finding new roles) compared to seniors.
+
+3. **Political Clout & Advocacy**: Senior engineers’ credibility with management amplifies juniors’ achievements. Avoiding politics undermines their ability to highlight team efforts, reducing promotion opportunities for juniors.
+
+4. **Moral Responsibility**: Rejecting corporate goals as “bullshit” harms the team. Effective political engagement is framed as ethical—protecting juniors’ careers—rather than cynical self-interest.
+
+# How I got promoted to staff engineer twice
+The author shares insights from being promoted to staff engineer at two companies (Zendesk and GitHub) within two years, highlighting strategies for advancing from senior to staff engineer:
+
+## Key Drivers for Promotion
+1. **Strategic Value to Leadership:**
+    - Promotions occur primarily to retain high-value engineers or empower them to lead critical cross-organizational projects.
+
+    - Technical prowess or mentoring alone are insufficient; delivering measurable business impact is essential.
+
+2. **Alignment with Company Priorities:**
+
+    - Focus on projects that address the company’s current goals (e.g., enterprise features, reliability improvements).
+
+    - Avoid prioritizing personal or non-aligned initiatives, even if technically impressive.
+
+3. **Outcome Over Effort**:
+    - Success is judged by project results, not effort. Technical competence is critical to drive projects to completion.
+
+**Role of Leadership and Mentoring**:
+While leadership and mentoring are part of the role, they are secondary to shipping high-impact work. Mentoring gains traction when it directly supports company objectives (e.g., team growth during expansion).
+
+**Environmental Factors** 
+- Company Structure: Staff roles must exist, and budgets must allow for promotions.
+
+- Managerial Support: A proactive manager is crucial to advocate, align projects, and navigate promotion processes.
+
+- Organizational Buy-In: Skip-level managers and existing staff engineers must endorse the promotion, requiring a strong reputation.
+
+**Practical Advice**
+
+- Switch Companies if Necessary: Landing a staff role externally is often easier than internal promotion.
+
+- Avoid Politics: Focus on visible, impactful work rather than campaigning for promotion without results.
+
+
+
+# What it's like working for American companies as an Australian
+> Australia does have a healthy tech sector, but it’s nothing compared to America’s. If I lived in San Francisco, I’d have ~100x more available jobs to apply to if I lost my current one.  
+> For this reason, I operate a little less idealistically and a little more tactically than I would in an Australian-based company.
+
+# What makes strong engineers strong?
+Strong engineers excel due to four key traits, prioritized as follows:
+
+Self-Belief: Confidence to tackle unfamiliar or complex problems head-on, even amid uncertainty. This mindset avoids procrastination, fosters resilience, and creates a feedback loop where tackling hard tasks builds further confidence. Strong engineers trust their ability to solve problems or recognize when challenges are insurmountable.
+
+Pragmatism: Focus on practical, functional solutions over theoretical perfection. They prioritize shipping results, often clashing with engineers who over-optimize for elegance. Decisions are judged by real-world impact, not abstraction or neatness, with compromises made to deliver efficiently.
+
+Speed: Rapid execution driven by confronting hard tasks immediately and accumulating experience through iterative work. Speed enables experimentation, testing high-reward ideas, and tackling qualitatively different challenges. It stems from focused productivity bursts, not long hours, though exceptional individuals may combine both.
+
+Technical Ability: Baseline competence is essential, but effectiveness hinges on alignment between skills and project needs (e.g., familiarity with specific tools or domains). Raw genius is less critical than adaptability; overly technical engineers may lack pragmatism or speed, hindering results.
 
 # Source
 - https://www.seangoedecke.com/where-the-money-comes-from/
 - https://www.seangoedecke.com/value-over-replacement/
 - https://www.seangoedecke.com/what-is-important/
+- https://www.seangoedecke.com/politics-is-your-responsibility/
+- https://www.seangoedecke.com/working-for-americans/
+- https://www.seangoedecke.com/what-makes-strong-engineers-strong/
