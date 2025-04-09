@@ -113,6 +113,46 @@ Speed: Rapid execution driven by confronting hard tasks immediately and accumula
 
 Technical Ability: Baseline competence is essential, but effectiveness hinges on alignment between skills and project needs (e.g., familiarity with specific tools or domains). Raw genius is less critical than adaptability; overly technical engineers may lack pragmatism or speed, hindering results.
 
+# Grifters, believers, grinders, and coasters
+The article explores four archetypes of engineers—grifters, believers, grinders, and coasters—to explain workplace conflicts and advocate for a balanced team dynamic. Each type approaches work differently, reflecting distinct values and strategies:
+
+1. **Grifters**: Tactically align with leadership priorities to advance projects and their careers. They excel in navigating organizational politics, securing buy-in, and delivering results that align with rewards. However, they may perpetuate existing culture without driving change and avoid unrewarded critical work.
+
+2. **Believers**: Prioritize mission-driven, quality work and user experience over politics. They uphold ethical standards and customer focus but may resist organizational shifts, risking alienation during company pivots. Often under-promoted due to rejecting "game-playing."
+
+3. **Coasters**: Work efficiently, avoiding unnecessary effort. They maintain calm, handle ad-hoc tasks, and rely on "hammock time" (reflective problem-solving). While stabilizing teams, they may lack urgency for high-volume workloads.
+
+4. **Grinders**: Relentlessly productive, tackling tasks with intensity. They deliver quickly but risk burnout and may overlook broader context. Common among juniors, but sustainability issues push many toward coasting over time.
+
+The author argues that healthy organizations blend these types: Grifters secure resources, Believers safeguard mission and quality, Grinders drive output, and Coasters provide flexibility. Conflicts arise from clashing values (e.g., Believers vs. Grifters on ethics vs. pragmatism), but mutual understanding is key. Advice includes Grifters collaborating with Believers to prevent cultural decay, Believers choosing mission-aligned companies, Grinders tolerating Coasters (as they may evolve into them), and Coasters appreciating Grinders’ contributions. Ultimately, empathy and strategic diversity foster resilience and balance in engineering teams.
+
+*PS*: Author is considering himself as Grifter+Coaster
+
+# What can strong engineers do that weak engineers can't?
+The article explores the distinction between strong, regular, and weak software engineers, emphasizing that talent is defined by capability to solve tasks others cannot, not just speed or output. Key points:
+
+1. **Strong Engineers**
+    - *Capabilities*: Tackle complex, high-impact tasks others cannot, such as resolving race conditions in distributed systems, reworking legacy codebases, or advancing cutting-edge tech (e.g., self-driving cars).
+
+    - *Impact*: Their value is not linear (e.g., "10x") but infinite on certain problems where others fail entirely.
+
+    - *Traits*: Often excel across multiple domains, possibly due to raw skill, problem-solving adaptability, or dedication.
+
+2. **Regular Engineers**
+    - *Capabilities*: Handle ~95% of routine tasks (fixing common bugs, delivering standard JIRA tickets) steadily but lack the ability to solve the hardest problems.
+    - *Role*: Critical for day-to-day operations; reliable but not exceptional.
+
+3. **Weak Engineers**
+    - *Capabilities*: Struggle with even basic tasks, often relying on others to complete their work.
+    - *Survival Tactics*:
+        - One-way pairing: Constantly seek help from colleagues (e.g., DMs, round-robin requests) while contributing little.
+        - Vague participation: Engage in discussions with generic advice rather than concrete, system-specific insights.
+        - Seniority paradox: Weak engineers are more common in senior roles due to interview tactics (e.g., claiming credit for team work) and the pressure to hide incompetence.
+
+**Working with Weak Engineers**
+- *Be empathetic but protective*: Avoid sacrificing your time to solve their tasks. Redirect requests to next steps instead of providing full solutions.
+- *Shield juniors*: Prevent exploitation by ensuring management is aware of unbalanced "mentoring" dynamics.
+- *Focus on reality*: Recognize that weak engineers may not be fired quickly due to company processes or unseen personal circumstances.
 # Source
 - https://www.seangoedecke.com/where-the-money-comes-from/
 - https://www.seangoedecke.com/value-over-replacement/
@@ -120,3 +160,5 @@ Technical Ability: Baseline competence is essential, but effectiveness hinges on
 - https://www.seangoedecke.com/politics-is-your-responsibility/
 - https://www.seangoedecke.com/working-for-americans/
 - https://www.seangoedecke.com/what-makes-strong-engineers-strong/
+- https://www.seangoedecke.com/programmer-archetypes/
+- https://www.seangoedecke.com/weak-engineers/
