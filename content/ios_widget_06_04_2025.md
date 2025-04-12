@@ -11,3 +11,5 @@
 
 # Resources
 - [AppGroup Creation](https://www.youtube.com/watch?v=FV_3kiRF90g)
+- [AppGroup details](https://medium.com/@B4k3R/setting-up-your-appgroup-to-share-data-between-app-extensions-in-ios-43c7c642c4c7)
+- [Widget Tutorial](https://www.youtube.com/watch?v=Z_m5d8RS4xU&t=2477s)
