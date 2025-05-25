@@ -32,6 +32,7 @@
 - [6 Apr, 2025: iOS Widget with DB interaction](/content/ios_widget_06_04_2025.md)
 - [8 Apr, 2025: The Art of Tech Career?](/content/the_art_of_tech_career_08_04_2025.md)
 - [10 May, 2025: Finch App Analysis](/content/finch_app_analysis_10_05_2025.md)
+- [25 May, 2025: Procastination of sideproject]()
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
