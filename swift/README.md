@@ -19,3 +19,4 @@ All about ios developement
 
 # Other Resource
 - [Swiftui components](https://gist.github.com/twentyse7en/25bc160f7661ec5c2ea28f88bfe33d9c)
+- [Share Image to instagram](https://medium.com/@danielcrompton5/share-content-to-an-instagram-story-from-an-ios-app-d55b1e10e68a)
