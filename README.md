@@ -34,6 +34,7 @@
 - [10 May, 2025: Finch App Analysis](/content/finch_app_analysis_10_05_2025.md)
 - [25 May, 2025: Procastination of sideproject]()
 - [4 Jun, 2025: Emotional Design: The Secret Behind Weirdly Addictive Apps](/content/emotional_design_4_06_2025.md)
+- [8 Jun, 2025: My AI Journey So Far](/content/ai_journey_so_far_08_06_2025.md)
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
