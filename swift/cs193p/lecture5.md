@@ -56,3 +56,130 @@ struct Card: Equatable, Identifiable, CustomDebugStringConvertible {
 
 ## struct is passed as value
 when you passing struct as argument, it is passed as a value not a reference. You can't modify that.
+
+## Enum
+enum feels very powerful in swift, It can save data as well.
+
+```swift
+enum FastFoodMenuItem {
+    case hamburger(numberOfPatties: Int)
+    case fries(size: FryOrderSize)
+    case drink(String, ounces: Int) // unnamed first parameter
+    case cookie
+}
+
+enum FryOrderSize {
+    case large
+    case small
+}
+
+var fries: FastFoodMenuItem = .fries(size: .large)
+```
+
+An enum's state is usually checked with a **switch** statement. Although we could use an if statement, but it is unusal if there is a associated data.
+
+```swift
+var fries: FastFoodMenumItem = .fries(size: .large)
+
+// NOTE: switch <enum>
+switch fries {
+    case .fries(let size): print("size \(size)")
+    default:  print("Others")
+}
+```
+- You don't need to add break after each case
+- You can have methods, but not properties
+
+```swift
+enum FastFoodMenuItem {
+    // ...
+    func isSpecialOrder(number: Int) -> Bool {
+        switch self { // <---------------- self to reference itself
+            case .hamburger(let pattyCount): return pattyCount === number
+        }
+    }
+}
+```
+
+- Getting all cases of enum, we need to add a protocol to it
+```swift
+enum TeslaModel: CaseIterable {
+    case X
+    case Y
+    case Three
+    case Y
+}
+
+for model in TeslaModel.allCases {
+    // do what you want
+}
+```
+
+## Optional
+
+```swift
+var hello: String?
+var hello: String? = "hello"
+
+// above code
+var hello: Optional<String> = .none
+var hello: Optional<String> = "hello"
+
+print(hello!) // forced - if nil it will crash app
+
+
+// TO safely look at value
+if let safeHello = hello {
+    print(safeHello)
+} else {
+    // do something else
+}
+
+// or
+
+if let hello {
+    print(hello) // but why not if hello?
+} else {
+    //
+}
+
+// ❌ this isn't the right way
+if hello != nil {
+    // hello is still of type String?
+    // You can force unwrap (if you are sure) but that's risky
+    print(hello!)
+}
+
+```
+
+## Bonus
+Swift compiled to c
+
+```swift
+struct Point { 
+    var x: Int  // 8 bytes
+    var y: Int  // 8 bytes
+    
+    mutating func moveBy(dx: Int, dy: Int) {
+        x += dx
+        y += dy
+    }
+}
+```
+
+```c
+#include <stdio.h>
+
+struct Point {
+    int x; // 4 bytes
+    int y; // 4 bytes
+};
+
+void moveBy(struct Point *p, int dx, int dy) {
+    p->x += dx;
+    p->y += dy;
+}
+
+```
+# Get set
+watch from here https://youtu.be/F1x-H8kEwo8?t=3779
