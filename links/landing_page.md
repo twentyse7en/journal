@@ -11,3 +11,6 @@ travel booking app, tracking etc: https://transitapp.com/
 
 # Zen Browser
 - Nice color scheme and fonts https://zen-browser.app/
+
+# Sparkle
+- A file orginzer mac app landing page https://makeitsparkle.co/every
