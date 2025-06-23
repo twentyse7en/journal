@@ -40,7 +40,7 @@
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
 - [Sam Who](https://samwho.dev/)
-- [Salary Negotiation](https://www.complexsystemspodcast.com/episodes/how-to-negotiate-your-salary-package/) [HN](https://news.ycombinator.com/item?id=44313739) | This is written in American Context
+- [Salary Negotiation](https://www.complexsystemspodcast.com/episodes/how-to-negotiate-your-salary-package/) | [HN Discussion](https://news.ycombinator.com/item?id=44313739) | This is written in American Context
   
 # Link Collection
 A collection of links I find useful
