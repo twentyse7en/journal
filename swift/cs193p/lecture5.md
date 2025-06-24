@@ -181,5 +181,51 @@ void moveBy(struct Point *p, int dx, int dy) {
 }
 
 ```
-# Get set
-watch from here https://youtu.be/F1x-H8kEwo8?t=3779
+# Get Set on computed property
+```swift
+class Example {
+    var storedProperty: Int = 0     // 8 bytes allocated
+    
+    var computedProperty: Int {     // 0 bytes allocated
+        get { return storedProperty * 2 }
+        set { storedProperty = newValue / 2 }
+    }
+}
+
+const example = Example();
+print("value \(exampl.computedProperty)");
+example.computedProperty = 2;
+
+``` 
+It's simply getting the value formatted and setting the value with some process, no storage for `computedProperty`
+
+```js
+let storedValue = 0;
+
+const getFormattedValue = () => {
+    return storedValue * 2;
+}
+
+const setFormattedValue = (newValue) => {
+    storedValue = newValue / 2;
+}
+```
+
+💭 It make sense, the place using the struct/class don't need to implement a format util, it's inside the class, and exposed via a property.
+
+# Extension
+
+```swift
+// we can access the array using self
+extension Array where Element == Int {
+    func average() -> Double {
+        guard !self.isEmpty else { return 0 }
+        let total = self.reduce(0, +)
+        return Double(total) / Double(self.count)
+    }
+}
+
+// usage
+let numbers = [10, 20, 30, 40]
+print(numbers.average()) // Output: 25.0
+```
