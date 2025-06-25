@@ -3,6 +3,9 @@ All about ios developement, the notes I took, information I felt saving.
 ## Stanford: [CS193p](https://cs193p.stanford.edu/)
 - Lecture 1: Getting Started with SwiftUI: [Note](/swift/cs193p/lecture1.md) | [Video](https://www.youtube.com/watch?v=n1qabtjZ_jg)
 - Lecture 2: More swift ui: [Note](/swift/cs193p/lecture2.md) | [Video](https://www.youtube.com/watch?v=sXiD-2XrkKQ)
+- Lecture 4: [Note](/swift/cs193p/lecture4.md)
+- Lecture 5: [Note](/swift/cs193p/lecture5.md)
+
 
 ## Content
 - [Layout]()
@@ -12,6 +15,7 @@ All about ios developement, the notes I took, information I felt saving.
 - [Adding Fonts](https://www.youtube.com/watch?v=Us8KX8LLlM0&t=1s)
 - [Adding Lottie]()
 - [Animations](/swift/animations.md)
+- [SwiftUI for web developers](/swift/swift-ui-for-web-dev.md)
 
 ## IOS
 - [AppDelegate](/swift/app_delegate.md)
