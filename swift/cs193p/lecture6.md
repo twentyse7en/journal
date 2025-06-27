@@ -154,4 +154,18 @@ GeometryReader { geometry in
 // https://youtu.be/fYlMD9llu7w?t=2375
 ```
 
-continue: https://youtu.be/fYlMD9llu7w?t=2583
+## View Builder
+
+```swift
+@ViewBuilder
+var cards: some View {
+    let aspectRatio: CGFloat = 2/3 // <-------- can't add this variable without view builder
+    GeometryReader { geometry in
+        let gridItemSize = gridItemWidthThatFits(
+            count: viewModel.cards.count,
+            size: geometry.size,
+            atAspectRatio: aspectRatio
+        )
+```
+
+continue: https://youtu.be/fYlMD9llu7w?t=2670
