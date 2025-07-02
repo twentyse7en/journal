@@ -18,3 +18,5 @@ Personal websites I found interesting
 
 - [Blogscroll](https://blogscroll.com/) - contain a lot of personal websites
 - [Oktawian Chojnacki](https://oktawian.chojnacki.me/)
+
+- [Josh W. Comeau](https://www.joshwcomeau.com/about-josh/) - Coool!!!
