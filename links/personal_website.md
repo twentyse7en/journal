@@ -21,3 +21,6 @@ Personal websites I found interesting
 
 - [Josh W. Comeau](https://www.joshwcomeau.com/about-josh/) - Coool!!!
 - [SST](https://sst.dev/) - nice color scheme
+
+- [Keshav](https://www.kshv.me/)
+- [Chan dai](https://chanhdai.com/)
