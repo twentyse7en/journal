@@ -24,3 +24,4 @@ Personal websites I found interesting
 
 - [Keshav](https://www.kshv.me/)
 - [Chan dai](https://chanhdai.com/)
+- [Jhey](https://www.jhey.dev/)
