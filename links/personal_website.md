@@ -25,3 +25,4 @@ Personal websites I found interesting
 - [Keshav](https://www.kshv.me/)
 - [Chan dai](https://chanhdai.com/)
 - [Jhey](https://www.jhey.dev/)
+- [Brad Woods](https://bradwoods.io/) [blog](https://garden.bradwoods.io/)
