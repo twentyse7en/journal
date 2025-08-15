@@ -26,3 +26,4 @@ Personal websites I found interesting
 - [Chan dai](https://chanhdai.com/)
 - [Jhey](https://www.jhey.dev/)
 - [Brad Woods](https://bradwoods.io/) [blog](https://garden.bradwoods.io/)
+- [Harsha Gowda](https://iknowharsha.framer.website/) // Designer
