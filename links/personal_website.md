@@ -28,3 +28,4 @@ Personal websites I found interesting
 - [Brad Woods](https://bradwoods.io/) [blog](https://garden.bradwoods.io/)
 - [Harsha Gowda](https://iknowharsha.framer.website/) // Designer
 - [Benji](https://benji.org/)
+- [MAU](https://www.rasmusnielsen.dk/about)
