@@ -30,3 +30,4 @@ Personal websites I found interesting
 - [Benji](https://benji.org/)
 - [MAU](https://www.rasmusnielsen.dk/about)
 - [Matthew](https://www.matthewporteous.com/portfolio)
+- [Frank Chimero](https://frankchimero.com/)
