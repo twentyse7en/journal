@@ -5,6 +5,7 @@
 # ASO Stuffs
 - [ASO, Paid Ads, and Organic Growth – Notes](./AsoPaidAd.md)
 - [SKAN](./skan.md)
+- [App Growth Phases](./appGrowthPhases.md)
 
 
 # Other resources
