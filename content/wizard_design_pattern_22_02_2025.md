@@ -1,6 +1,4 @@
-const doc = `
-# Invoice Upload Flow – State Management Decision
-
+# Wizard design pattern
 ## Use Case
 
 Multi-step invoice upload flow:
@@ -20,9 +18,9 @@ Multi-step invoice upload flow:
 ## Approach 1: Passing Data via Navigation Params
 
 ### How it works
-- Step 1 passes full payload using navigation params
-- Step 2 receives and forwards it
-- Step 3 receives it again
+- Step 1: passes full payload using navigation params to upload screen
+- Step 2: upload screen receives and forwards it
+- Step 3: Final review screen receives it again
 
 ### Drawbacks
 
