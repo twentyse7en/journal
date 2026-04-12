@@ -41,6 +41,7 @@
 - [16 Jan, 2025: React Native: From JSX to Pixels](/content/react_to_native_16_01_2025.md)
 - [27 Jan, 2025: React Native threads - Old vs New](/content/react_native_threads_27_01_2026.md)
 - [22 Feb, 2025: Wizard design pattern](/content/wizard_design_pattern_22_02_2025.md)
+- [12 Apr, 2026: Context is the work](/content/context_is_the_work_12_04_2026.md)
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
