@@ -43,6 +43,9 @@
 - [22 Feb, 2025: Wizard design pattern](/content/wizard_design_pattern_22_02_2025.md)
 - [12 Apr, 2026: Context is the work](/content/context_is_the_work_12_04_2026.md)
 
+# Engineering Weekly
+- [#1: Text layout issues in react native](/content/engineering_weekly_1_13_04_2026.md)
+
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
 - [Sam Who](https://samwho.dev/)
