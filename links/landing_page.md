@@ -17,3 +17,6 @@ travel booking app, tracking etc: https://transitapp.com/
 
 # Gumroad
 - https://gumroad.com/
+
+# UniSwap
+- https://app.uniswap.org/
