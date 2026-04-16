@@ -47,7 +47,7 @@
 - [#1: Text layout issues in react native](/content/engineering_weekly_1_13_04_2026.md)
 
 # Interesting People
-- [Intreseting People]() I find on internet, these people can be a source of inspiration.
+- [Intreseting People](/content/people/README.md) I find on internet, these people can be a source of inspiration.
 
 # Reading Bucketlist
 Some blogs or articles I discovered, which I haven't got time to read completely
