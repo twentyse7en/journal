@@ -31,3 +31,5 @@ Personal websites I found interesting
 - [MAU](https://www.rasmusnielsen.dk/about)
 - [Matthew](https://www.matthewporteous.com/portfolio)
 - [Frank Chimero](https://frankchimero.com/)
+
+- [Harin](https://harin.design/) -- design, have good design ideas for ios app
