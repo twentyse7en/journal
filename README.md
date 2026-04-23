@@ -42,6 +42,7 @@
 - [27 Jan, 2025: React Native threads - Old vs New](/content/react_native_threads_27_01_2026.md)
 - [22 Feb, 2025: Wizard design pattern](/content/wizard_design_pattern_22_02_2025.md)
 - [12 Apr, 2026: Context is the work](/content/context_is_the_work_12_04_2026.md)
+- [23 Apr, 2026: React Native animation internals](/content/react_native_animation_internals_23_04_2026.md)
 
 # Engineering Weekly
 - [#1: Text layout issues in react native](/content/engineering_weekly_1_13_04_2026.md)
