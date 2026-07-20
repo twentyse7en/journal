@@ -33,3 +33,4 @@ Personal websites I found interesting
 - [Frank Chimero](https://frankchimero.com/)
 
 - [Harin](https://harin.design/) -- design, have good design ideas for ios app
+- [Rayan Selmi](https://rselmi.com/) - Nice website for portfolio
