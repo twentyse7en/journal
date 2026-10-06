@@ -34,3 +34,5 @@ Personal websites I found interesting
 
 - [Harin](https://harin.design/) -- design, have good design ideas for ios app
 - [Rayan Selmi](https://rselmi.com/) - Nice website for portfolio
+
+- [Fabien Penso](https://pen.so/) Minimal text rich personal website (good if you are applying to companies)
