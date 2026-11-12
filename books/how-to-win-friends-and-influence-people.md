@@ -57,4 +57,9 @@
 - May be even with friends may be you need to make them talk about what they want often, if you suppress your thoughts what's the point.
 
 ### Chapter 9
+> **Principle 6 - Make the other person feel important and do it sincerely**
+
 > “Little phrases such as "I'm sorry to trouble you," "Would you” “be so kind as to ----? " "Won't you please?" " Would you mind?" "Thank you" - little courtesies like these oil the cogs of the monotonous grind of everyday life”
+
+> "You recognize their importance and recognize it sincerely"
+
